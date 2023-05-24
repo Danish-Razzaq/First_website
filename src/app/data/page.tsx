@@ -8,7 +8,7 @@ const Data = async () => {
 
     return (
         <div className="md:p-5 lg:p-5 p-2" >
-            {res.map((item:any ,id:number) => {
+            {res.map((item:any ,id:any) => {
                 return (
                   <li>  <Link href={`/data/${item.id}`}>{`${item.title}`}</Link></li>
                 )
